@@ -5,15 +5,15 @@
 
     if('*' == $op)
     {
-
+        $res = $op1 * $op2;
     }
     elseif('+' == $op)
     {
+        $res = $op1 + $op2;
     }
     else
     {
         echo '<br/><strong>opérateur ' . $op . ' non géré </strong>';
     }
-
-    echo 'op1 '. $op. ' op2 = ';
+    if (isset($res)) echo 'op1 '. $op. ' op2 = ' . $res;
 ?>
