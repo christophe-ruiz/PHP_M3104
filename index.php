@@ -5,6 +5,7 @@
 
     echo "$var1 + $var2" . "\n";
     echo $var1 + $var2 . "\n";
+    //echo $var1 + $var3; // Warning: A non-numeric value encountered in index.php on line 12
 
     echo '<strong> Voici mon premier programme PHP </strong><br>' . "\n";
     echo 'C\'est pas mal non ?' . "\n";
