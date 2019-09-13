@@ -1,19 +1,21 @@
 <?php
-    $op1 = $_POST['op1'];
-    $op2 = $_POST['op2'];
-    $op = $_POST['op'];
+    $op1 = $_GET['op1'];
+    $op2 = $_GET['op2'];
+    $action = $_GET['action'];
 
-    if('*' == $op)
+    echo $action . '<br>';
+
+    if('*' == $action)
     {
         $res = $op1 * $op2;
     }
-    elseif('+' == $op)
+    elseif('+' == $action)
     {
         $res = $op1 + $op2;
     }
     else
     {
-        echo '<br/><strong>opérateur ' . $op . ' non géré </strong>';
+        echo '<br/><strong>opérateur ' . $action . ' non géré </strong>';
     }
-    if (isset($res)) echo 'op1 '. $op. ' op2 = ' . $res;
+    if (isset($res)) echo 'op1 '. $action . ' op2 = ' . $res;
 ?>

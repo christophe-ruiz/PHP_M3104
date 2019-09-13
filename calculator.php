@@ -3,7 +3,7 @@
     $operateurs = '*+-/';
     start_page('Calculatrice');
     echo'
-    <form action ="calcul.php" method="post">
+    <form action ="calcul.php" method="GET">
         <input type="text" name ="op1">
         <input type="text" name ="op2"> <br>';
 
@@ -14,10 +14,7 @@
         {
             echo 'checked="checked" ';
         }
-        echo 'type="radio" name="op" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . ' <br/>' . "\n";
+        echo 'type="submit" name="action" value="' . $operateurs[$cpt] . '"/>' . ' <br/>' . "\n";
     }
-    echo '<input type="submit" value="Envoyer">
-    </form>
-        ';
     end_page();
 ?>
