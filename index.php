@@ -35,5 +35,6 @@
     end_page();
     */
     // 4. Date
+
     echo date('l F d, Y');
 ?>
