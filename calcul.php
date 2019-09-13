@@ -17,5 +17,5 @@
     {
         echo '<br/><strong>opérateur ' . $action . ' non géré </strong>';
     }
-    if (isset($res)) echo 'op1 '. $action . ' op2 = ' . $res;
+    if (isset($res)) echo $op1 . $action . $op2 . '=' . $res;
 ?>
