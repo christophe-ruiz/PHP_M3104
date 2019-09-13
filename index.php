@@ -40,14 +40,5 @@
     echo $jour;
     */
     // 5.Calculatrice
-    start_page('Calculatrice');
-    echo'
-    <form action ="index.php" method="post">
-        <input checked="checked" type="radio" name="op" value="*"/>*<br/>
-        <input type="radio" name="op" value="+"/>+<br/>
-        <input type="radio" name="op" value="-"/>-<br/>
-        <input type="radio" name="op" value="/"/>/<br/>
-    </form>
-        ';
-    end_page();
+
 ?>
