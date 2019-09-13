@@ -14,6 +14,7 @@
     */
 
     // 3. Mutualisation du code
+    /*
     function start_page ($title)
     {
         echo '<!DOCTYPE html> <html lang=fr>
@@ -32,4 +33,7 @@
 
     echo '<hr/><br><strong>Test</strong><br><hr>';
     end_page();
+    */
+    // 4. Date
+    echo date('l F d, Y');
 ?>
