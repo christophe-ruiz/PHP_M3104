@@ -12,9 +12,8 @@
     echo '<strong> Voici mon premier programme PHP </strong><br>' . "\n";
     echo 'C\'est pas mal non ?' . "\n";
     */
-
     // 3. Mutualisation du code
-    /*
+
     function start_page ($title)
     {
         echo '<!DOCTYPE html> <html lang=fr>
@@ -24,20 +23,31 @@
               <body>' . PHP_EOL;
     };
 
-    start_page('titre');
-
     function end_page (){
         echo '</body>
               </html>';
     }
-
+    /*
+    start_page('titre');
     echo '<hr/><br><strong>Test</strong><br><hr>';
     end_page();
     */
     // 4. Date
-
+    /*
     //echo date('l F d, Y');
     //$jour = date('l F d, Y');
     $jour = date('d/m/Y', strtotime('2020-04-01'));
     echo $jour;
+    */
+    // 5.Calculatrice
+    start_page('Calculatrice');
+    echo'
+    <form action ="index.php" method="post">
+        <input checked="checked" type="radio" name="op" value="*"/>*<br/>
+        <input type="radio" name="op" value="+"/>+<br/>
+        <input type="radio" name="op" value="-"/>-<br/>
+        <input type="radio" name="op" value="/"/>/<br/>
+    </form>
+        ';
+    end_page();
 ?>
