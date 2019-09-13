@@ -9,7 +9,7 @@
         <input type="radio" name="op" value="+"/>+<br/>
         <input type="radio" name="op" value="-"/>-<br/>
         <input type="radio" name="op" value="/"/>/<br/>
-        <button type="submit" value="Envoyer"></button>
+        <input type="submit" value="Envoyer">
     </form>
         ';
     end_page();
