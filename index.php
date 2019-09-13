@@ -38,5 +38,5 @@
 
     //echo date('l F d, Y');
     $jour = date('l F d, Y');
-    echo ${date};
+    echo $jour;
 ?>
