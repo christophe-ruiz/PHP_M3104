@@ -36,5 +36,7 @@
     */
     // 4. Date
 
-    echo date('l F d, Y');
+    //echo date('l F d, Y');
+    $jour = date('l F d, Y');
+    echo ${date};
 ?>
